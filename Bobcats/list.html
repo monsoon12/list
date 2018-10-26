@@ -5761,40 +5761,7 @@
     <script src="js/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
-           /* var oriosTop = $("#scrolltop").offset().top; //元素距浏览器最上边的距离
-            $(".list").scroll( function(){
-
-                var scrollValue=$(".list").scrollTop(); //元素相对滚动条顶部的距离
-                if (scrollValue > 200){
-                    $('#scrollbtm').show(); //显示回到顶部
-                } else {
-                    $('#scrollbtm').hide();	//隐藏回到顶部
-                }
-
-                //向下滚动时，某模块标题固定在顶部显示；向上回滚时，恢复到原来位置。
-                if (scrollValue >= oriosTop){
-                    $("#scrolltop").addClass("top");
-                } else {
-                    $("#scrolltop").removeClass("top");
-                }
-
-                //当滚到最底部时，显示底部banner
-               /* var docHeight = $(document).height();
-                var winHeight = $(window).height();
-                if (scrollValue + winHeight == docHeight) //是否到最底部
-                {
-                    $('#scrolltop').slideDown('fast');
-                    //alert('到底了 :)');
-                } else {
-                    $('#scrolltop').slideUp('fast');
-                }
-            });*/
-
             $(".list li").click(function(){
-                // $("#scrolltop b").remove();
-                // $("#scrollbtm b").remove();
-                // $("#scrolltop").append("<b>"+this.innerHTML+"</b>");
-                // $("#scrollbtm").append("<b>"+this.innerHTML+"</b>");
                 $(this).siblings('li').removeClass('show');
                 $(this).addClass('show');
             });
