@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html class="wf-iconfont-n4-active wf-active">
+<head>
+    <title>卡牌人物展示动图</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="css/index1.css" rel="stylesheet" type="text/css" />
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        if(deviceWidth > 640) deviceWidth = 640;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
+    </script>
+</head>
+<body class="percentage">
+
+
+<div class ="container percentage">
+    <header class="middle clearfix percentage">
+        <a href="http://uri6.com/tkio/f2myiia"><img src="images/pic6.jpg"></a>
+    </header>
+
+    <section class="content clearfix percentage">
+        <div id="banner">
+            <div class="box">
+                <li class="first"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <img class="pic" src="images/pic7.jpg">
+            </div>
+            <div class="btn">
+                <div class="left">></div>
+            </div>
+        </div>
+        <img src="images/pic9.jpg"/>
+
+        <a href="http://uri6.com/tkio/f2myiia">
+            <img src="images/pic8.jpg"/>
+        </a>
+        <div class="video_main dw video_bg percentage" align="center">
+            <video id="videoPlay1" src="images/video.mp4" poster="images/banner.jpg" loop="loop" x-webkit-airplay="true" webkit-playsinline="true" webkit-playsinline='true' playsinline='true' x5-video-player-type='h5' x5-video-player-fullscreen='true' x5-video-ignore-metadata='true'>
+                您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+            </video>
+        </div>
+
+        <img src="images/pic5.jpg"/>
+    </section>
+</div>
+
+<script src="jq/jquery.js"></script>
+<script>
+    timer = null;
+    var nowTime = new Date();  //获取当前时间
+    $(".left").click(function () {
+        if(new Date() - nowTime > 500){
+            move(false);
+            nowTime = new Date();
+        }
+    });
+    $(".right").click(function () {
+        if(new Date() - nowTime > 500){
+            move(true);
+            nowTime = new Date();
+        }
+    });
+    function move(direction) {
+        var arrW = [], arrH = [], arrL = [], arrT = [], arrZ = [], arrO = [];
+        $("#banner .box li").each(function (i) {
+            arrW[i] = $(this).css("width");//获取每一个li的宽度，保存起来
+            arrH[i] = $(this).css("height");
+            arrL[i] = $(this).css("left");
+            arrT[i] = $(this).css("top");
+            arrZ[i] = $(this).css("z-index");
+            arrO[i] = $(this).css("opacity");
+        });
+        $("#banner .box li").each(function (i) {
+            var index;
+            if (direction)
+            {
+                //往右边
+                index = i - 1;
+                if(index < 0)
+                {
+                    index = 3 ;
+                }
+                $(this).css("z-index",arrZ[index]);
+                $(this).animate({
+                    width: arrW[index],
+                    height: arrH[index],
+                    left: arrL[index],
+                    top: arrT[index],
+                    opacity: arrO[index]
+                },500);
+            } else {
+                index = i+1;
+                if (index > 3)
+                {
+                    index = 0;
+                }
+                $(this).css("z-index",arrZ[index]);
+                $(this).animate({
+                    width: arrW[index],
+                    height: arrH[index],
+                    left: arrL[index],
+                    top: arrT[index],
+                    opacity: arrO[index]
+                },500);
+            }
+        })
+    }
+    setInterval('$(".left").click()',1000);
+</script>
+
+<script type="text/javascript">
+    var video1=document.getElementById("videoPlay1");
+    video1.onclick=function(){
+        if(video1.paused){
+            video1.play();
+        }else{
+            video1.pause();
+        }
+    }
+</script>
+</body>
+
+</html>
