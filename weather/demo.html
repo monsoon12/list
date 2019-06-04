@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/file.css">
+    <script>
+        var html = document.querySelector('html');
+        var width = html.getBoundingClientRect().width;
+        html.style.fontSize = width / 10 + 'px';
+    </script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="box">
+        <div class="temperature">
+            <div class="place">
+                <span>北京</span>
+                <b> +</b>
+            </div>
+            <div class="date">
+                <span class="month calendar">5月23日</span>
+                <span class="month sameDay">周四</span>
+                <span class="month lunar">四月十九</span>
+            </div>
+            <div class="degree">
+                <div class="degree_date">
+                    <strong>23</strong>
+                    <div class="climate">
+                        <span>雨</span>
+                    </div>
+                </div>
+                <div class="atmosphere">AQI<span>48</span></div>
+            </div>
+            <div class="humidity">
+                <div class="direction">
+                    <span class="wind">西南风</span>
+                    <span class="level">1级</span>
+                    <span class="damp">湿度</span>
+                    <span class="damp_humidity">78%</span>
+                </div>
+            </div>
+        </div>
+        <div class="week">
+            <div class="prediction">5天预报</div>
+            <div class="content_term">
+                <div class="term">
+                    <p class="month">今天</p>
+                    <p class="text_date">05/22</p>
+                    <p class="change">多云转小雨</p>
+                </div>
+                <div class="term">
+                    <p class="month">明天</p>
+                    <p class="text_date">05/23</p>
+                    <p class="change">晴</p>
+                </div>
+                <div class="term">
+                    <p class="month">周六</p>
+                    <p class="text_date">05/24</p>
+                    <p class="change">南风转西南风</p>
+                </div>
+                <div class="term">
+                    <p class="month">周日</p>
+                    <p class="text_date">05/25</p>
+                    <p class="change">小雨</p>
+                </div>
+                <div class="term">
+                    <p class="month">周一</p>
+                    <p class="text_date">05/26</p>
+                    <p class="change">多云</p>
+                </div>
+            </div>
+        </div>
+        <div id="wrap"></div>
+
+    </div>
+    <script src="https://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/control.js"></script>
+
+</body>
+</html>

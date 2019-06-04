@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft yahei';
+}
+#box{
+    position: relative;
+}
+#wrap{
+    height: 6.5rem;
+    background-color: #527696;
+    /*margin-left: -1.4rem;*/
+    padding-top: 1.5rem;
+}
+.highcharts-legend,.highcharts-credits,.highcharts-yaxis,.highcharts-yaxis-labels,.highcharts-title,.highcharts-grid-line,.highcharts-axis-line,.highcharts-tick,.highcharts-xaxis-labels{
+    display: none;
+}
+.highcharts-point{
+    background-color: #ffffff;
+}
+.highcharts-background{
+    display: none;
+}
+.highcharts-container {
+    margin-top: 20%;
+}
+.highcharts-root{
+    margin-left: -0.82rem;
+}
+tspan{
+    /*color: #ffffff;*/
+    text-shadow:0 0 0 ;
+}
+.temperature {
+    height: 6.3rem;
+    /*background-color: #012a41;*/
+    color: #ffffff;
+    font-size: 16px;
+    background: url("../image/tianqi.jpg")no-repeat center center/cover;
+}
+.temperature .place{
+    text-align: center;
+    line-height: 0.8rem;
+}
+.temperature .place span{
+    position: relative;
+    font-size: 0.4rem;
+}
+.temperature .place span:before{
+    position: absolute;
+    left: -0.55rem;
+    top: -0.05rem;
+    content: '';
+    width: 0.5rem;
+    height: 0.55rem;
+
+    background: url("../image/place.png")no-repeat 0.06rem 0.15rem;
+    background-size: auto 0.37rem;
+}
+.temperature .place b{
+    margin-left: 5px;
+    font-size: 0.45rem;
+}
+.temperature .date{
+    text-align: center;
+    line-height: 0.8rem;
+}
+.temperature .date span.month{
+    margin-right: 5px;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+.temperature .date span.calendar{
+    position: relative;
+}
+.temperature .date span.calendar:before{
+    position: absolute;
+    left: -0.54rem;
+    top: -0.05rem;
+    content: '历';
+    width: 0.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.3rem;
+    background: rgba(255,255,255,0.2);
+}
+.temperature .degree{
+    position: relative;
+    height: 2.5rem;
+    /*line-height: 2.5rem;*/
+    /*margin-top: 0.3rem;*/
+}
+.temperature .degree .degree_date{
+    position: relative;
+    margin: 0 auto;
+    width: 3rem;
+    /*text-align: center;*/
+}
+.temperature .degree strong{
+    font-weight:normal;
+    font-size: 2.1rem;
+}
+.temperature .degree strong:before{
+    position: absolute;
+    content: '';
+    right: -0.5rem;
+    top: 0.5rem;
+    width: 0.32rem;
+    height: 0.32rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+.temperature .degree .degree_date .climate{
+    position: absolute;
+    right: -1.3rem;
+    top: 0.4rem;
+    /*width: 2rem;*/
+    /*height: 1rem;*/
+    font-size: 0.42rem;
+
+}
+.degree .atmosphere{
+    position: absolute;
+    right: 0;
+    top: 0.4rem;
+    width: 1.45rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.3rem;
+    background: rgba(255,255,255,0.2);
+    text-indent: 0.4rem;
+}
+.degree .atmosphere:after{
+    position: absolute;
+    content: '';
+    left: 0.2rem;
+    top: 0.1rem;
+    width: 0;
+    height: 0.3rem;
+    border-left: 2px solid #ff5f9a;
+}
+.degree .atmosphere span{
+    margin-left: 3px;
+}
+.humidity{
+    margin-top: 0.3rem;
+}
+.humidity .direction{
+    margin: 0 auto;
+    width: 6.1rem;
+    height: 0.9rem;
+    line-height: 0.95rem;
+    background: rgba(255,255,255,0.2);
+    text-indent: 1.1rem;
+    -webkit-border-radius: 28px 3px 28px 3px;
+    -moz-border-radius: 28px 3px 28px 3px;
+    border-radius: 28px 3px 28px 3px;
+}
+.humidity .direction span{
+    margin-right: 5px;
+    font-size: 0.37rem;
+}
+.week{
+    width: 100%;
+    position: absolute;
+    height: 8rem;
+    background-color: #fcf3fc;
+    overflow: hidden;
+}
+.prediction{
+    width: 100%;
+    height: 0.9rem;
+    line-height: 0.9rem;
+    font-size: 0.4rem;
+    color: #888888;
+    text-indent: 0.55rem;
+}
+.content_term{
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.term{
+    flex: 1;
+    /*margin-top: 0.9rem;*/
+    width: 1.98rem;
+    height: 100%;
+    /*border-right: 1px solid #658bad;*/
+    /*border-top: 1px solid #658bad;*/
+    /*text-indent: 0.65rem;*/
+    text-align: center;
+    font-size: 0.36rem;
+    color: #999899;
+}
+.term p{
+    padding: 0.2rem 0;
+
+}
+.text_date{
+    font-size: 0.3rem;
+    text-indent: 0.1rem;
+}
+/*.term:nth-child(2){*/
+    /*margin-left: 2rem;*/
+/*}*/
+/*.term:nth-child(3){*/
+    /*margin-left: 4rem;*/
+/*}*/
+/*.term:nth-child(4){*/
+    /*margin-left: 6rem;*/
+/*}*/
+/*.term:nth-child(5){*/
+    /*margin-left: 8rem;*/
+/*}*/
+.highcharts-color-0{
+    position: relative;
+}
+text{
+    font-weight:normal!important;
+    fill: #999899!important;
+    color: #999899!important;
+    font-size: 0.38rem!important;
+}
+.prominent_left,.prominent_right{
+    position: absolute;
+    width: 0.5rem;
+    background: red;
+    border-top: 2px solid #ffc200;
+}
+.prominent_left0,.prominent_right0{
+    position: absolute;
+    width: 0.5rem;
+    background: red;
+    border-top: 3px solid #03ccfb;
+    transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg); /* IE 9 */
+    -webkit-transform:rotate(-10deg); /* Safari and Chrome */
+}
