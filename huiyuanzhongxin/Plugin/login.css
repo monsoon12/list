@@ -1,0 +1,205 @@
+/*
+* @Author: xuebingsi
+* @Date:   2019-04-01 13:37:17
+* @Last Modified by:   zhibinm
+* @Last Modified time: 2019-04-01 13:37:19
+*/
+.login-bg{
+    /*background: #eeeeee url() 0 0 no-repeat;*/
+     background:url(../../images/bg.png) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+}
+.login{
+    margin: 14% auto 0 auto;
+    min-height: 420px;
+    max-width: 420px;
+    padding: 40px;
+    /*background-color: #ffffff;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
+}
+.login a.logo{
+    display: block;
+    height: 58px;
+    width: 167px;
+    margin: 0 auto 30px auto;
+    background-size: 167px 42px;
+}
+.login .message {
+    margin-bottom: 36px;
+    padding: 40px 0px;
+    /*background: #3483fb;*/
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    background: url("../../images/login_icon.png")no-repeat center center;
+}
+.login #darkbannerwrap {
+    background: url(../../images/aiwrap.png);
+    width: 18px;
+    height: 10px;
+    margin: 0 0 20px -58px;
+    position: relative;
+}
+
+.login input[type=text],
+.login input[type=file],
+.login input[type=password],
+.login input[type=email], select {
+    width: 100%;
+    border: 1px solid #DCDEE0;
+    vertical-align: middle;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    height: 55px;
+    padding: 0px 16px;
+    font-size: 14px;
+    color: #555555;
+    outline:none;
+    box-sizing: border-box;
+    outline:none;
+}
+
+
+.login  .password-input{
+    margin-bottom: 16px;
+}
+.login input[type=text]:focus,
+.login input[type=file]:focus,
+.login input[type=password]:focus,
+.login input[type=email]:focus, select:focus {
+    border: 1px solid #3483fb;
+}
+.login input[type=submit],
+.login input[type=button]{
+    display: inline-block;
+    vertical-align: middle;
+    width:100%;
+    padding: 12px 24px;
+    margin: 0px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3483fb;
+    border-radius: 3px;
+    border: none;
+    -webkit-appearance: none;
+
+
+}
+.login .layui-input:focus{
+    border-color: #3483fb!important;
+}
+.login hr {
+    background: #fff url("") 0 0 no-repeat;
+}
+.login hr.hr15 {
+    height: 15px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.login hr.hr20 {
+    height: 20px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+.login .name-input{
+    margin-bottom: 10px;
+}
+/*form.layui-form{*/
+    /*display: none;*/
+/*}*/
+.jump{
+    display: none;
+    position: absolute;
+    top: 155px;
+    left: 0px;
+    width: 420px;
+    height: 160px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+p.text-tip {
+    position: relative;
+    font-size: 18px;
+    line-height: 60px;
+    text-align: center;
+    color: #000000;
+
+}
+.success-tip{
+    text-indent: 30px;
+    margin-top: 20px;
+}
+.icon-xiaoxi-chenggong{
+    position: absolute;
+    left: 24%;
+    top: 0px;
+    font-size: 35px!important;
+    color: #3483fb;
+}
+.text-tip a{
+    color: #3483fb;
+    font-size: 16px;
+}
+.text-tip a:hover{
+    color: #3483fb;
+    text-decoration: underline;
+}
+
+input:-webkit-autofill {
+    /*color: #333!important;*/
+    /*-webkit-text-fill-color: #333;*/
+    box-shadow: 0 0 0 1000px #ffffff inset
+}
+
+input:autofill {
+    /*color: #333!important;*/
+    /*-webkit-text-fill-color: #333;*/
+    box-shadow: 0 0 0 1000px red inset
+}
+/*-------------------------------------------*/
+
+.tip{
+    display: none;
+    width:100%;
+    line-height: 55px;
+    background-color: #ed5454;
+    color: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-indent: 16px;
+}
+.font-icon{
+    position: relative;
+}
+.font-icon .icon-quangou,.font-icon .icon-yunongtongjingshigantanhao{
+    display: none;
+    position: absolute;
+    left: 90%;
+    top: 25%;
+    font-size: 24px!important;
+    color: #009688;
+}
+.font-icon .icon-yunongtongjingshigantanhao{
+    color: #ef6363;
+}
