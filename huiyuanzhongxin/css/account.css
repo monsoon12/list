@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Microsoft yahei';
+}
+i{
+    font-style:normal;
+}
+body{
+    background-color: #ffffff;
+}
+span{
+    color: #333333;
+}
+input{
+    -webkit-border-radius: 2px!important;
+    -moz-border-radius: 2px!important;
+    border-radius: 2px!important;
+}
+#adduser{
+    padding: 15px 15px 0 15px;
+    background: #f1f1f1;
+}
+#adduser .layui-form-radio>i:hover, .layui-form-radioed>i{
+    color: #3c98f9;
+}
+#adduser .layui-row{
+    padding: 60px;
+    background-color: #ffffff;
+}
+#adduser .user .layui-unselect{
+    width: 190px;
+}
+#adduser .layui-form-select dl dd.layui-this{
+    background-color: #3c98f9;
+}
+.butn-file{
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    margin: 0px 0px 0px 125px;
+    background-color: #3483fb;
+    border: 1px solid #3483fb;
+    color: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.cancel{
+    margin-left: 20px!important;
+    background-color: #d4d4d4;
+    border: 1px solid #d4d4d4;
+}
+.cancel:hover{
+    background-color: #cacaca;
+}
+.define{
+    margin-left: 125px;
+}
+.define,.cancel{
+    margin-top: 5px;
+    display: none;
+    padding: 5px 29px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.portrait-pic{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 15px 0 0 125px;
+}
+.portrait{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.portrait-bottom{
+    position: relative;
+    margin-top: 15px;
+}
+.portrait-title{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+    cursor: pointer;
+}
+.password-bh{
+    text-align: left;
+    white-space:nowrap;
+}
+.layui-form-item{
+    margin-bottom: 25px;
+}
+.layui-form-item .layui-input-inline{
+    width: 400px;
+}
+#adduser .layui-form-item {
+    position: relative;
+}
+#adduser .form-item{
+    position: relative;
+    width: 510px;
+    height: 38px;
+}
+#adduser .layui-form-item i.btn-xg{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 25px;
+    background: url("../images/u2346.png")no-repeat center center;
+    background-size: 20px auto;
+    cursor: pointer;
+}
+#adduser .password-input{
+    display: none;
+    width: 300px!important;
+}
+#adduser .layui-form-item i.btn-tj{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 70px;
+    line-height: 38px;
+    background-color: #3483fb;
+    color: #ffffff;
+    text-align: center;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.label-title{
+    color: #a1a2a2;
+}
+span.name_user{
+    display: block;
+    width: 100%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+.portrait_size{
+    padding-top: 0;
+}
+.layui-input{
+    margin-left: 13px;
+}
+.explain{
+    position: absolute;
+    line-height: 25px;
+    left: 350px;
+    top: 132px;
+    color: #bfbfbf;
+    font-size: 12px;
+}
+.define:hover,.btn-tj:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition:.5s;
+    -o-transition: .5s;
+    transition: .5s;
+}

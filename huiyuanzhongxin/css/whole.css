@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.btn-top{
+    padding: 35px 30px 35px 60px;
+    border-bottom: 1px solid #DDDDDD;
+    background-color: #ffffff;
+}
+.btn-top a{
+    padding: 10px 25px;
+    border: 1px solid #DDDDDD;
+    background-color: #ffffff;
+    color: #515151;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.btn-top a.on{
+    /*border: none;*/
+    border: 1px solid #3c98f9;
+    background-color: #3c98f9;
+    color: #ffffff;
+
+}
+.btn-top a:hover{
+    /*border: none;*/
+    border: 1px solid #3c98f9;
+    background-color: #3c98f9;
+    color: #ffffff;
+
+}
+.btn-top a:last-of-type,.btn-top a:nth-last-child(2){
+    margin-left: 35px;
+}
+#form-list .layui-card-body td,#form-list .layui-card-body th{
+    text-align: center;
+}
+.subject .name-caozuo a.xiugai{
+    padding:15px 10px 15px 25px;
+    background: url("../images/u2477.png")no-repeat 5px 12px;
+    -webkit-background-size: 12px auto;
+    background-size: 12px auto;
+    font-size: 12px;
+}
+.subject .name-caozuo a.xiugai:hover{
+    color: #3c98f9;
+    background: url("../images/u1109_mouseOver.png")no-repeat 0px 12px;
+}
+.subject .name-caozuo a.shanchu{
+    padding:15px 10px 15px 25px;
+    background: url("../images/u2476.png")no-repeat 0px 14px;
+    -webkit-background-size: 14px auto;
+    background-size: 14px auto;
+    font-size: 12px;
+}
+.subject .name-caozuo a.shanchu:hover{
+    color: #3c98f9;
+    background: url("../images/u1108_mouseOver.png")no-repeat 0px 14px;
+
+}
+.page span.current{
+    background: #3c98f9;
+    border: 1px solid #3c98f9;
+}
